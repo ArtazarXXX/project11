@@ -40,7 +40,7 @@ export class AppComponent implements OnInit{
   }
  }
 
-  addDet(DetName){
+  addDet(DetName){ //Добавление нового датчика
     let det = {id: this.MyDets.length + 1, name: DetName, status: Math.random() * 2 < 1};
     this.MyDets.push(det);
  }
